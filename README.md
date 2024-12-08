@@ -21,13 +21,13 @@
 #### FACIAL RECOGNITION & EMOTION DETECTION
 ![PHOTO-2024-12-03-22-20-53](https://github.com/user-attachments/assets/2ff54ef0-2e8f-430d-8b9e-112d50a7b63a)
 
-### TECH COMMUNICATION & LIP SYNCING 
+#### TECH COMMUNICATION & LIP SYNCING 
 ![wws](https://github.com/user-attachments/assets/aecd06c5-9c7c-4039-879e-43bd2d5d8c70)
 
-### GAMIFICATION
+#### GAMIFICATION
 ![qq](https://github.com/user-attachments/assets/49363af5-f3d7-48ff-b065-6136638b643e)
 
-### TECH ART
+#### TECH ART
 
 
 
