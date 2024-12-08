@@ -10,13 +10,13 @@
 ## Supervisor - Ms.Jenny Krishara
 ## Co-Supervisor - Ms.Thamali Dassanayake
 
-## Main Objective 
+# Main Objective 
 ## We use the latest tools and technologies such as detecting facial expressions for emotion, lip-syncing, and gamifying curriculums along with dynamic art teaching tools to ensure an exciting personalized learning journey. We seek to enhance the art learning experience and how it is delivered by introducing a more interactive and fun approach that also promotes the students' creativity and skill development in a gamified setting, by responding to the emotions and the learning styles of the students.
 
-## Overall Daigram
+# Overall Daigram
 ![s](https://github.com/user-attachments/assets/0ab78ff3-642c-4b30-bacd-7f27eb340487)
 
-## Components 
+# Components 
 
 ## FACIAL RECOGNITION & EMOTION DETECTION
 ![PHOTO-2024-12-03-22-20-53](https://github.com/user-attachments/assets/2ff54ef0-2e8f-430d-8b9e-112d50a7b63a)
@@ -31,23 +31,23 @@
 
 
 
-## Technology
+# Technology
 
 ## App Requirnment
-## VSCODE
-## COLAB
-## MONGODB
-## GITHUB
+### VSCODE
+### COLAB
+### MONGODB
+### GITHUB
 
 ## API Requirnment
-## KERAS
-## TENSORFLOW
-## SCIKIT-LEARN
-## OPENCV
-## FASTAPI
-## PILLOW
-## PHYTHON
-## UVICORN
+### KERAS
+### TENSORFLOW
+### SCIKIT-LEARN
+### OPENCV
+### FASTAPI
+### PILLOW
+### PHYTHON
+### UVICORN
 
 
 
