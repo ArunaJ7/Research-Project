@@ -18,7 +18,7 @@
 
 # Components & System Daigrams
 
-### FACIAL RECOGNITION & EMOTION DETECTION
+#### FACIAL RECOGNITION & EMOTION DETECTION
 ![PHOTO-2024-12-03-22-20-53](https://github.com/user-attachments/assets/2ff54ef0-2e8f-430d-8b9e-112d50a7b63a)
 
 ### TECH COMMUNICATION & LIP SYNCING 
