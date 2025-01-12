@@ -37,3 +37,13 @@ app.add_middleware(
 UPLOADS_DIR = "./uploads"
 
 Path(UPLOADS_DIR).mkdir(parents=True, exist_ok=True)
+
+# Setting up logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+# DB Configurations
+MONGODB_CONNECTION_URL = "mongodb+srv://dbuser:111222333@cluster0.frzat.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+client = AsyncIOMotorClient(MONGODB_CONNECTION_URL)
+db = client["elearning_db"]
+user_collection = db["users"]
