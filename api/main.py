@@ -48,7 +48,6 @@ client = AsyncIOMotorClient(MONGODB_CONNECTION_URL)
 db = client["elearning_db"]
 user_collection = db["users"]
 
-# Hand Sign Detect ===============================================================================================================
 MODEL_PATH = 'hand_sign_numbers.h5'
 
 # Load model with handling for potential custom objects
@@ -72,3 +71,23 @@ def predict_hand_sign(model, image_path):
     predicted_class = class_names[predicted_class_index]
     
     return predicted_class
+
+@app.post("/predict-handsign")
+async def upload_image(file: UploadFile = File(...)):
+    try:
+        # Save the uploaded file
+        file_path = os.path.join(UPLOADS_DIR, file.filename)
+        os.makedirs(UPLOADS_DIR, exist_ok=True)  # Ensure the upload directory exists
+        with open(file_path, "wb") as buffer:
+            buffer.write(await file.read())
+        
+        # Load the model
+        model = load_model_with_custom_objects(MODEL_PATH, custom_objects=None)
+
+        # Make prediction
+        predicted_class = predict_hand_sign(model, file_path)
+        
+        return {"predicted_class": predicted_class}
+    
+    except Exception as e:
+        return JSONResponse(content={"error": str(e)}, status_code=500)
