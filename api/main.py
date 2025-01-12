@@ -47,3 +47,28 @@ MONGODB_CONNECTION_URL = "mongodb+srv://dbuser:111222333@cluster0.frzat.mongodb.
 client = AsyncIOMotorClient(MONGODB_CONNECTION_URL)
 db = client["elearning_db"]
 user_collection = db["users"]
+
+# Hand Sign Detect ===============================================================================================================
+MODEL_PATH = 'hand_sign_numbers.h5'
+
+# Load model with handling for potential custom objects
+def load_model_with_custom_objects(model_path, custom_objects=None):
+    model = tf.keras.models.load_model(model_path, custom_objects=custom_objects)
+    return model
+
+# Function to preprocess the uploaded image and make predictions
+def predict_hand_sign(model, image_path):
+    # Open the image and preprocess it
+    img = Image.open(image_path)
+    img = img.resize((48, 48))  # Resize the image to match the model input size (48x48)
+    img = np.array(img)  # Convert image to numpy array
+    img = img / 255.0  # Normalize pixel values to be between 0 and 1
+    
+    # Make prediction
+    prediction = model.predict(np.expand_dims(img, axis=0))  
+    predicted_class_index = np.argmax(prediction)  
+    
+    class_names = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']  
+    predicted_class = class_names[predicted_class_index]
+    
+    return predicted_class
