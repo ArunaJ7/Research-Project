@@ -1,58 +1,70 @@
+# Getting Started with Create React App
 
-# Team Name - E-learning system for deaf students
-# Project Group - 24-25J-104
-### Group Leader - IT21210006 - Jayaweera J.M.A.U
-### Member 2 - IT21358302 - Jayathilake J.H.U.I.B
-### Member 3 - IT21297090 - Jayamini Y.C.M
-### Member 4 - IT21178672 - Malshan G.D.J
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Supervisor Details
-### Supervisor - Ms.Jenny Krishara
-### Co-Supervisor - Ms.Thamali Dassanayake
+## Available Scripts
 
-# Main Objective 
-### We use the latest tools and technologies such as detecting facial expressions for emotion, lip-syncing, and gamifying curriculums along with dynamic art teaching tools to ensure an exciting personalized learning journey. We seek to enhance the art learning experience and how it is delivered by introducing a more interactive and fun approach that also promotes the students' creativity and skill development in a gamified setting, by responding to the emotions and the learning styles of the students.
+In the project directory, you can run:
 
-# Overall Daigram
-![s](https://github.com/user-attachments/assets/0ab78ff3-642c-4b30-bacd-7f27eb340487)
+### `npm start`
 
-# Components & System Daigrams
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-#### FACIAL RECOGNITION & EMOTION DETECTION
-![PHOTO-2024-12-03-22-20-53](https://github.com/user-attachments/assets/2ff54ef0-2e8f-430d-8b9e-112d50a7b63a)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-#### TECH COMMUNICATION & LIP SYNCING 
-![wws](https://github.com/user-attachments/assets/aecd06c5-9c7c-4039-879e-43bd2d5d8c70)
+### `npm test`
 
-#### GAMIFICATION
-![qq](https://github.com/user-attachments/assets/49363af5-f3d7-48ff-b065-6136638b643e)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-#### TECH ART
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-# Technology
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## App Requirnment
-### VSCODE
-### COLAB
-### MONGODB
-### GITHUB
+### `npm run eject`
 
-## API Requirnment
-### KERAS
-### TENSORFLOW
-### SCIKIT-LEARN
-### OPENCV
-### FASTAPI
-### PILLOW
-### PHYTHON
-### UVICORN
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-#### GitHub Link - https://github.com/ArunaJ7/Research-Project
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
