@@ -1,0 +1,103 @@
+:root {
+  /* Dark Theme Base */
+  --primary-bg: #276ad4;         /* Deep purple */
+  --primary-accent: #3d142f;     /* Rich plum */
+  --primary-accent2: #5d2d4a;    /* Soft berry */
+  --secondary-bg: #f8f9fa;       /* Light gray */
+  --secondary-accent: #e9ecef;   /* Lighter gray */
+  
+  /* Text Colors */
+  --primary-font: #f8f9fa;       /* White */
+  --secondary-font: #495057;     /* Dark gray */
+  --dark: #212529;               /* Near black */
+  --light: #e9ecef;              /* Light gray */
+  
+  /* Status Colors */
+  --success: #40c057;            /* Bright green */
+  --info: #15aabf;               /* Teal */
+  --warning: #fab005;            /* Golden yellow */
+  --danger: #fa5252;             /* Coral red */
+  
+  /* Effects */
+  --shadow: #adb5bd;             /* Medium gray */
+  --highlight: #d6336c;          /* Pinkish red */
+  
+  /* Gradient Backgrounds */
+  --bg0: #4a154b;                /* Deep purple */
+  --bg1: #6a1b5d;                /* Royal purple */
+  --bg2: #8a2c62;                /* Berry */
+  --bg3: #1e0b1b;                /* Darkest purple */
+
+  /* Child-Friendly Accents */
+  --child-blue: #4dabf7;
+  --child-purple: #9775fa;
+  --child-pink: #f06595;
+  --child-orange: #ff922b;
+  --child-yellow: #ffd43b;
+
+  /* Borders */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.15);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.15);
+}
+
+/* Additional child-friendly components */
+.btn-child-primary {
+  background-color: var(--child-purple);
+  color: white;
+}
+
+.btn-child-secondary {
+  background-color: var(--child-blue);
+  color: white;
+}
+
+.highlight-box {
+  background-color: var(--child-yellow);
+  color: var(--dark);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-md);
+}
+
+.interactive-card {
+  background: var(--primary-accent);
+  border: 2px solid var(--child-pink);
+  transition: all 0.3s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  border-color: var(--child-yellow);
+}
+
+/* Accessibility Contrast */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-font: #ffffff;
+    --secondary-font: #000000;
+    --success: #008000;
+    --danger: #ff0000;
+  }
+}
+
+/* Dark mode tweaks for child-friendliness */
+.dark-mode {
+  --secondary-bg: #343a40;
+  --secondary-accent: #495057;
+  --primary-font: #f8f9fa;
+  --secondary-font: #e9ecef;
+  
+  /* Brighter accents in dark mode */
+  --child-blue: #74c0fc;
+  --child-purple: #b197fc;
+  --child-pink: #ff8787;
+  --child-orange: #ffa94d;
+  --child-yellow: #ffe066;
+}

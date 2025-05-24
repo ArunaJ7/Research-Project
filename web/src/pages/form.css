@@ -1,0 +1,211 @@
+/* Links */
+.custom-link {
+  color: var(--child-purple);
+  padding-bottom: 4px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px dotted var(--child-blue);
+}
+
+.custom-link:hover {
+  color: var(--child-pink);
+  border-bottom: 2px solid var(--child-yellow);
+}
+
+/* Body background */
+.form-body {
+  background-image: 
+    radial-gradient(circle at 20% 30%, var(--child-purple), var(--bg3) 70%),
+    linear-gradient(to bottom, var(--bg3), var(--child-purple));
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comic Neue', cursive;
+}
+
+/* Form container */
+.form-container {
+  background-color: var(--primary-bg); 
+  color: var(--light);
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px solid var(--child-blue);
+  box-shadow: 
+    0 0 0 5px var(--child-purple),
+    0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-container-lg {
+  background-color: var(--text-dark) !important; 
+  max-width: 900px;
+}
+
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(45deg, 
+    var(--child-blue), 
+    var(--child-pink), 
+    var(--child-yellow));
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.3;
+}
+
+.form-container h1 {
+  color: var(--child-yellow);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 0 var(--primary-accent);
+}
+
+/* Input fields */
+input[type='text'],
+input[type='email'],
+input[type='password'], 
+input[type='file'], 
+input[type='range'], 
+select, 
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid var(--child-blue);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-font);
+  transition: all 0.3s ease;
+  font-family: 'Comic Neue', cursive;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--child-yellow);
+  box-shadow: 0 0 0 3px rgba(255, 212, 59, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#remember-me {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: var(--child-purple);
+  cursor: pointer;
+}
+
+/* Buttons */
+.custom-button {
+  padding: 12px 30px;
+  background: linear-gradient(45deg, var(--child-purple), var(--child-pink));
+  color: white;
+  border-radius: 50px;
+  min-width: 200px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: block;
+  margin: 25px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, var(--child-pink), var(--child-purple));
+}
+
+.custom-button:active {
+  transform: translateY(1px);
+}
+
+.custom-button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.custom-button:hover::after {
+  left: 100%;
+}
+
+.primary {
+  background: linear-gradient(45deg, var(--child-blue), var(--child-purple));
+}
+
+.light {
+  background: var(--child-yellow);
+  color: var(--dark);
+}
+
+/* Form footer */
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--light);
+}
+
+.form-footer a {
+  color: var(--child-yellow);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .form-container h1 {
+    font-size: 1.5rem;
+  }
+  
+  .custom-button {
+    padding: 10px 20px;
+    min-width: 150px;
+  }
+}
+
+/* Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
