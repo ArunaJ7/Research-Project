@@ -61,7 +61,7 @@ const EmotionSuggestion = () => {
     const queries = {
       happy: "funny kids videoss",
       sad: "uplifting kids shorts",
-      angry: "relaxing kids animations",
+      angry: "relaxing child animations",
       surprised: "exciting discovery videos",
       neutral: "calming bedtime stories",
     };
