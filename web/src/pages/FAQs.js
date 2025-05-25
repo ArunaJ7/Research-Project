@@ -15,7 +15,7 @@ const FAQContainer = () => {
             <Row className="align-items-center">
               <Col className="text-center custom-frame">
                 <h1>Frequently Asked Questions</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan euismod lorem, eget consectetur felis accumsan a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan euismod lorem, eget consectetur felis accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan euismod lorem, eget consectetur felis accumsan a.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  lorem, eget consectetur felis accumsan a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan euismod lorem, eget consectetur felis accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan euismod lorem, eget consectetur felis accumsan a.</p>
                 <div className="button-group">
                   <Link to={'/faq-details'}><button className="custom-button light mr-3">View FAQ Details</button></Link>
                   <Link to={'/sign-in'}><button className="custom-button primary">Get Started</button></Link>
