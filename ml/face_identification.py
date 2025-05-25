@@ -99,3 +99,4 @@ class FaceRecognition:
         video_capture.release()
         cv2.destroyAllWindows()
         return detected
+
