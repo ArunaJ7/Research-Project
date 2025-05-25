@@ -1,0 +1,36 @@
+<h1> Buddhist and Pali University of SriLanka </h1>
+<h3>  Project Consumable Issues Item Lists <br> </h3>
+{{$project != '-1'? 'Project : '.$projectDesc : ''}},
+<?php
+    $dateObj = DateTime::createFromFormat('!m', $month);
+    $monthName = $dateObj->format('F');   
+?>
+   @switch($valueOfDateCategory)
+    @case('VR')
+        <span class="status">
+            Year : {{$year}} , Month : {{$monthName}}
+        </span>
+        @break
+
+    @case('VI')
+        <span class="status">
+            Year : {{$year}}
+        </span>
+        @break
+
+    @default
+        <span class="status">
+            From : {{$fromDate}}  To : {{$toDate}}
+        </span>
+@endswitch
+
+<br />
+<div class="col-md-12 text-right">
+    <a href="{{url('/project-issues/view/excelTotal/'.$project.'/'.$year.'/'.$month.'/'.$valueOfDateCategory.'/'.$fromDate.'/'.$toDate)}}" class="btn btn-success"> Convert Into Excel</a> 
+</div>
+<div class="row">
+    <div class="col-md-12 p-2 text-white font-weight-bold m-5 bg-dark text-left" >
+        Total Issues Value of All Items : {{number_format(($stockItem),2,'.',',')}}
+    </div>
+</div>
+</div>
